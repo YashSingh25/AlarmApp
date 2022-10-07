@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Calendar trigger=calendar;
-        trigger.add(Calendar.SECOND , 90 );
+        trigger.add(Calendar.MINUTE , 30 );
         long triggerTime=trigger.getTimeInMillis();
         Log.d("RES", String.valueOf(trigger.getTimeInMillis()));
         Intent iBroadCast=new Intent(getApplicationContext() , MyReceiver.class);
